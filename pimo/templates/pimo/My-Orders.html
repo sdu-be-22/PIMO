@@ -1,0 +1,114 @@
+    {% load static %}
+    {#                  <form action="#" method="get" class="u-expanded-width-xs u-search u-search-right u-search-1">#}
+    {#                    {% if user.is_authenticated%}#}
+    {#                        <li class="nav-item" style="margin-left: 15px">#}
+    {#        <a class="nav-link" href="/logout" >Logout</a>#}
+    {#      </li>#}
+    {#      <li class="nav-item">#}
+    {#        <a class="nav-link" href="#">Welcome, {{user.username}}</a>#}
+    {#      </li>#}
+    {#                         {% else %}#}
+        {#                <a href="../../index/registration.html" style="margin-left: auto" type="submit">Register </a>#}
+    {#                  <a href="/../../index/login.html" type="submit">Login</a>#}
+    {#                    {% endif %}#}
+    {#              </button>#}
+    {#            </form>#}
+    {#          </div>#}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='{% static 'My-Orders.css' %}'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+</head>
+<body>
+
+        <div class="sidebar">
+    <p class="PI">PI</p><p class="MO">MO</p>
+    <a href="../" class="Home" name="btn">Home</a>
+    <a href="" class="MyOrders" name="btn">My Orders</a>
+    <a href="../My-Offers.html" class="MyOffers" name="btn">My Offers</a>
+    <a href="../Create-Order.html" class="CreateOrder" name="btn">Create Order</a>
+    <a class="Support" name="btn">Support</a>
+    <a class="Contact" name="btn">Contact</a>
+    <a class="pimo" name="btn">©2022 PIMO</a>
+</div>
+
+<a class = "HomeTitle">My Orders</a>
+
+<div class="social">
+    <img class="twitter" src="{% static 'twitter.png' %}">
+    <img class="facebook" src="{% static 'facebook.png' %}">
+    <img class="vk" src="{% static 'vk.png' %}">
+</div>
+
+{% for order in orders %}
+{% if user.id == order.created_by.id %}
+<div class="FirstOrder">
+    <a class="line"></a>
+    <p class="name">Title : {{ order.title }}</p>
+    <a class="line2"></a>
+    <p class="maxcost">Maximum payment : {{ order.max_cost }}</p>
+    <p class="line3"></p>
+    <p class="user">{{ order.created_by }}</p>
+    <p class="details">Details</p>
+    <p class="texts">{{ order.details }}</p>
+    <p class="deadline">DeadLine : {{ order.deadline }}</p>
+    <button class="makeoffer">Offers</button>
+</div>
+{% endif %}
+{% endfor %}
+
+{#               {% for order in orders %}#}
+{#            {% if order.created_by.id == user.id and forloop.counter  == 2 %}#}
+{#<div class="SecondOrder">#}
+{#    <a class="line"></a>#}
+{#    <p class="name">Title : {{ order.title   }}</p>#}
+{#    <a class="line2"></a>#}
+{#    <p class="maxcost">Maximum payment : {{ order.max_cost }}</p>#}
+{#    <p class="line3"></p>#}
+{#    <p class="user">{{ order.created_by }}</p>#}
+{#    <p class="details">Details</p>#}
+{#    <p class="texts">{{ order.details }}</p>#}
+{#    <p class="deadline">DeadLine : {{ order.deadline }}</p>#}
+{#    <button class="makeoffer">Offers</button>#}
+{#</div>#}
+{#             {% endif %}#}
+{#{% endfor %}#}
+{##}
+{#           {% for order in orders %}#}
+{#            {% if order.created_by.id == user.id and forloop.counter  == 3 %}#}
+{#<div class="ThirdOrder">#}
+{#    <a class="line"></a>#}
+{#    <p class="name">Title : {{ order.title   }}</p>#}
+{#    <a class="line2"></a>#}
+{#    <p class="maxcost">Maximum payment : {{ order.max_cost }}</p>#}
+{#    <p class="line3"></p>#}
+{#    <p class="user">User</p>#}
+{#    <p class="details">Details</p>#}
+{#    <p class="texts">{{ order.details }}</p>#}
+{#    <p class="deadline">DeadLine : {{ order.deadline }}</p>#}
+{#    <button class="makeoffer">Offers</button>#}
+{#</div>#}
+{#</body>#}
+{#  {% endif %}#}
+{#{% endfor %}#}
+
+<ul id="wrapper" class="pagination modal-5">
+    <section>
+        <div class="data-container"></div>
+        <div id="pagination-demo1"></div>
+
+    </section>
+  </ul>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="{% static 'pagination.js' %}"></script>
+<script type="text/javascript" src='{% static 'Main-Page.js' %}'></script>

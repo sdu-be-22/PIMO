@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+</head>
+
+<body>
+
+<form method="POST">
+<div class="centers">
+    <div class="inputs">
+    <p>User {% for offer in offers %} {% if forloop.counter == 1 %} {{ offer.user_id }} {% endif %} {% endfor %}</p>
+   <p>Offer: {% for offer in offers %} {% if forloop.counter == 1 %} {{ offer.cost }} {% endif %} {% endfor %}</p>
+    </div>
+    <div class="buttons">
+  <br>
+  <input type="submit" value="OK" class="accept">
+  <a href="/index" onclick="history.go(-1)" CLASS="deny" value="">Back</a>
+        </div>
+</div>
+</form>
+
+<style>
+body {
+  margin: 0;
+  background: #666;
+}
+a{
+  text-decoration: none;
+}
+.accept {
+  color: #FFF;
+  background: #44CC44;
+  padding: 15px 20px;
+  box-shadow: 0 4px 0 0 #2EA62E;
+}
+.accept:hover {
+  background: #6FE76F;
+  box-shadow: 0 4px 0 0 #7ED37E;
+
+}
+.deny {
+  color: #FFF;
+  background: tomato;
+  padding: 15px 20px;
+  box-shadow: 0 4px 0 0 #CB4949;
+}
+.deny:hover {
+  background: rgb(255, 147, 128);
+  box-shadow: 0 4px 0 0 #EF8282;
+}
+.centers{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.inputs{
+    margin-top: -60px;
+}
+
+.buttons{
+    margin-left: -120px;
+    margin-top: 100px;
+}
+</style>
+</body>
+</html>

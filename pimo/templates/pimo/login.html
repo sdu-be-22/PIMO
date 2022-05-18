@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/sign.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Registration</title>
+    <script src="../../static/scrypt.js">
+        
+        </script>
+    <script type = "text/javascript" src = "../../static/vue.min.js"></script>
+</head>
+<body class="bodySign">
+    
+    <div class="autoriz">
+        <img src="../../static/user.png" alt="">
+        <div>
+            <span id = "message" style="color:red"> </span> <br><br>  
+        <p>Login</p>
+        <p>If you want to login, fill out this form!</p>
+        </div>
+        <div>
+
+            <form method="POST">
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Username:
+                    <input class="ml-2 px-4 py-2 border rounded" type="text" placeholder="username" {{ form.username }}
+                </div>
+            </div>
+
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Password :
+                    <input id="password" class="ml-2 px-4 py-2 border rounded" type="password" placeholder="Password" {{ form.password }}
+                </div>
+            </div>
+            <button type="button"  onclick="showpassword()"class="btn btn-primary">Show</button></P>
+
+                <input type="submit" value="Login" class="btn btn-success"><p><a style="color: white;text-decoration: none;"></a></p>
+                <button type="button" class="btn btn-danger"><p><a href="../registration.html" style="color: white;text-decoration: none;">Registration</a></p></button>
+
+
+        </form>
+        </div>   
+    </div>
+    
+    
+</body>
+</html>

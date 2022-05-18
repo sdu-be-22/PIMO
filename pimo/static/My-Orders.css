@@ -1,0 +1,527 @@
+
+body{
+    position: absolute;
+    width: 99.4%;
+    height: 100%;
+    background: #050729;
+    opacity: 0.9;
+    box-shadow: 0px 4px 150px rgba(0, 0, 0, 0.75);
+    border-radius: 70px;
+    }
+    
+    .PI{
+        position: absolute;
+      margin-left: 15%;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 71px;
+        color: #F2C94C;
+    }
+    
+    .MO{
+        position: absolute;
+    margin-left: 22.5%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 71px;
+    letter-spacing: 0.045em;
+    
+    
+    color: #FFFFFF;
+    }
+    
+    .sidebar{
+        position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #0B0B0D;
+    opacity: 1;
+    backdrop-filter: blur(40px);
+    }
+    
+    .Home{
+        position: absolute;
+    width: 70px;
+    height: 47px;
+    left: 20%;
+    top: 25%;
+    color: #3E2CAF;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 47px;
+    }
+    /* Yellow */
+    .Home:hover,.MyOrders:hover,.MyOffers:hover,.CreateOrder:hover{
+    color: #F2C94C;
+    cursor: pointer;
+    }
+    
+    .active{
+        color: #F2C94C;
+    }
+    
+    .MyOrders{
+        position: absolute;
+    width: 140px;
+    height: 47px;
+    left: 20%;
+    text-decoration: none;
+    top: 32%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 47px;
+    color: #F2C94C;
+    }
+    
+    .MyOffers{
+        position: absolute;
+    width: 131px;
+    height: 47px;
+    left: 20%;
+    text-decoration: none;
+    top: 39%;
+    font-family: 'Oswald';
+    font-style: normal;
+    
+    font-size: 20px;
+    line-height: 47px;
+    
+    /* A276FF */
+    
+    color: #3E2CAF;
+    }
+    
+    .CreateOrder{
+        
+    position: absolute;
+    width: 175px;
+    height: 47px;
+    left: 20%;
+    top: 46%;
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 47px;
+    
+    /* A276FF */
+    
+    color: #3E2CAF;
+    
+    }
+    
+    .Support{
+        position: absolute;
+    width: 59px;
+    height: 25px;
+    left: 20%;
+    top: 90%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    
+    /* light */
+    
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    }
+    
+    .Contact{
+        position: absolute;
+    width: 58px;
+    height: 25px;
+    left: 50%;
+    top: 90%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    
+    /* light */
+    
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+    }
+    
+    .pimo{
+        position: absolute;
+    width: 85px;
+    height: 25px;
+    left: 375%;
+    top: 95%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.25;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .HomeTitle{
+        position: absolute;
+    margin-left: 28%;
+    margin-top: 2%;
+    height: 57px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+    /* or 50% */
+    
+    
+    color: #FFFFFF;
+    }
+    
+    .FirstOrder{
+        position: absolute;
+    width: 65%;
+    height: 20%;
+    left: 30%;
+    top: 13%;
+    
+    background: linear-gradient(180deg, #DFFFBF 63.02%, #E1FFF6 99.99%, rgba(255, 0, 199, 0) 100%);
+    border-radius: 15px 15px 15px 15px;
+    }
+    
+    .SecondOrder{
+        position: absolute;
+    width: 65%;
+    height: 20%;
+    left: 30%;
+    top: 40%;
+    
+    background: linear-gradient(180deg, #5FB2FF 63.02%, #9FD8F3 93.75%, #E1FFE7 99.98%, #E1FFF6 99.99%, rgba(255, 0, 199, 0) 100%);
+    border-radius: 15px 15px 15px 15px;
+    }
+    
+    .ThirdOrder{
+        position: absolute;
+    width: 65%;
+    height: 20%;
+    left: 30%;
+    top: 67%;
+    border-radius: 15px 15px 15px 15px;
+    background: linear-gradient(180deg, #FFBFBF 63.02%, #F3D8CF 77.08%, #EEE2D5 99.96%, #E1FFE7 99.97%, #E9EDDC 99.98%, #E1FFF6 99.99%, rgba(255, 0, 199, 0) 100%);}
+    
+    .social{
+        margin-top: -0.6%;
+        position: absolute;
+        width: 10%;
+        height: 8%;
+        margin-left: 75%;
+        /* Yellow */
+        
+        background: #F2C94C;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .twitter{
+        position: absolute;
+    left: 10.55%;
+    right: 68.57%;
+    top: 24%;
+    }
+    
+    .facebook{
+        position: absolute;
+    left: 40%;
+    right: 34.17%;
+    top: 24%;
+    bottom: -7.33%;
+    
+    
+    }
+    
+    .vk{
+        position: absolute;
+        left: 60%;
+        right: 34.17%;
+        top: 15%;
+        bottom: -7.33%;
+        width: 30px;
+    }
+    
+    .name{
+        position: absolute;
+    height: 42px;
+    left: 1%;
+    top: -10%;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 47px;
+    
+    color: #000000;
+    
+    }
+    
+    .maxcost{
+        position: absolute;
+    height: 43px;
+    left: 1%;
+    top: 20%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 47px;
+    
+    color: #000000;
+    }
+    
+    .deadline{
+        position: absolute;
+    height: 42px;
+    top: 55%;
+    left: 1%;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 47px;
+    
+    color: #000000;
+    }
+    
+    .line{
+        position: absolute;
+    width: 335px;
+    top: 30%;
+    
+    border: 0.5px solid #000000;
+    }
+    
+    .line2{
+            position: absolute;
+        width: 335px;
+        top: 65%;
+        border: 0.5px solid #000000;
+    }
+    
+    .line3{
+        position: absolute;
+    width: 14.4%;
+    top: 37%;
+    left: 27%;
+    
+    border: solid 0.5px #000000;
+    transform: rotate(90.41deg);
+    }
+    
+    .user{
+        position: absolute;
+    width: 162px;
+    height: 42px;
+    left: 93%;
+    top: -15%;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 47px;
+    
+    color: #000000;
+    }
+    
+    .details{
+        position: absolute;
+        left: 65%;
+        top: -15%;
+    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 47px;
+    
+    color: #000000;
+    
+    }
+    
+    .makeoffer{
+    
+          align-items: center;
+          appearance: none;
+          background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+          border: 0;
+          left: 87%;
+          top: 65%;
+          border-radius: 6px;
+          box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+          box-sizing: border-box;
+          color: #fff;
+          cursor: pointer;
+          display: inline-flex;
+          font-family: "JetBrains Mono",monospace;
+          height: 38px;
+          justify-content: center;
+          line-height: 1;
+          list-style: none;
+          overflow: hidden;
+          padding-left: 16px;
+          padding-right: 16px;
+          position: relative;
+          text-align: left;
+          text-decoration: none;
+          transition: box-shadow .15s,transform .15s;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          white-space: nowrap;
+          will-change: box-shadow,transform;
+          font-size: 15px;
+        }
+        
+        .makeoffer:focus {
+          box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        }
+        
+        .makeoffer:hover {
+          box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+          transform: translateY(-2px);
+        }
+        
+        .makeoffer:active {
+          box-shadow: #3c4fe0 0 3px 7px inset;
+          transform: translateY(2px);
+        }
+    
+       
+          .pagination {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+            margin-left: 40% ;
+            margin-top: 42.2%;
+          }
+          .pagination li {
+            display: inline;
+            text-align: center;
+          }
+          .pagination a {
+            float: left;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 5px 12px;
+            color: #fff;
+            margin-left: -1px;
+            border: 1px solid transparent;
+            line-height: 1.5;
+          }
+          .pagination a.active {
+            cursor: default;
+          }
+          .pagination a:active {
+            outline: none;
+          }
+          
+       
+          
+          .modal-5 {
+            position: relative;
+          }
+          .modal-5:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 35px;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPjxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+            background-size: 100%;
+            background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%, rgba(0, 0, 0, 0.65)), color-stop(50%, rgba(0, 0, 0, 0.65)), color-stop(60%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+            background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.65) 60%, rgba(0, 0, 0, 0) 100%);
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.65) 60%, rgba(0, 0, 0, 0) 100%);
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.65) 60%, rgba(0, 0, 0, 0) 100%);
+          }
+          .modal-5 a {
+            color: #666;
+            padding: 13px 5px 5px;
+            margin: 0 10px;
+            position: relative;
+          }
+          .modal-5 a:hover {
+            color: #fff;
+          }
+          .modal-5 a:hover:after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: #1E7EE2;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            z-index: -1;
+            left: -3px;
+            bottom: 4px;
+            margin: auto;
+          }
+          .modal-5 a.next, .modal-5 a.prev {
+            color: #1E7EE2;
+          }
+          .modal-5 a.next:hover, .modal-5 a.prev:hover {
+            color: #fff;
+          }
+          .modal-5 a.next:hover:after, .modal-5 a.prev:hover:after {
+            display: none;
+          }
+          .modal-5 a.active {
+            background: #1E7EE2;
+            color: #fff;
+          }
+          .modal-5 a.active:before {
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: -10px;
+            width: 18px;
+            border: 10px solid transparent;
+            border-bottom: 7px solid #104477;
+            z-index: -1;
+          }
+          .modal-5 a.active:hover:after {
+            display: none;
+          }
+      
+          .texts{
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 47px;
+
+            color: #000000;
+           }

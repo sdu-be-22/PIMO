@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.autoriz{
+    margin: 120px auto 0 auto;
+    background-color: #182134;
+    width:450px;
+    min-height: auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #3adbfd;
+    color: white;
+    background:linear-gradient(to top,#726851da,#9c9d9ed2 ,#ffffffa6);
+}
+.autoriz img{
+    width: 120px;
+    height: 120px;
+    border: 5px solid  black;
+    border-radius: 50%;
+    box-shadow: 0 -5px 0 #3adbfd;
+
+}
+
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.bodySign{
+    background:url("../static/fon6.jpg")
+}
+
+
+#message{
+    font-weight: bolder;
+}
+  

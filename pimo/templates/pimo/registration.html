@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/sign.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Registration</title>
+    <script src="../../static/scrypt.js">
+        
+        </script>
+
+</head>
+<body class="bodySign">
+    
+    <div class="autoriz">
+        <img src="../../static/user.png" alt="">
+        <div>
+            <span id = "message" style="color:red"> </span> <br><br>  
+        <p>Registration form</p>
+        <p>If you want to register, fill out this form!</p>
+        </div>
+        <div>
+        <form method="POST">
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Username:
+                    <input class="ml-2 px-4 py-2 border rounded" type="text" placeholder="Username" {{ form.username }}>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    First name:
+                    <input class="ml-2 px-4 py-2 border rounded" type="text" placeholder="Name" {{ form.first_name }}>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Last name:
+                    <input class="ml-2 px-4 py-2 border rounded" type="text" placeholder="last name" {{ form.last_name }}>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Your email:
+                    <input class="ml-2 px-4 py-2 border rounded" type="text" placeholder="email" {{ form.email }}>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-gray-400 focus-within:text-green-600 focus-within:underline">
+                    Password :
+                    <input id="password" class="ml-2 px-4 py-2 border rounded" type="password" placeholder="Password" {{ form.password }} >
+                    <button type="button" onclick="showpassword()"class="btn btn-primary">Show</button></P>
+                </div>
+            </div>
+                <input type="submit" class="btn btn-success" value="Register">
+                <button type="button" class="btn btn-danger"><p><a href="./login.html" style="color: white;text-decoration: none;">Back</a></p></button>
+        </form>
+        
+        </div>   
+    </div>
+    
+
+</body>
+</html>

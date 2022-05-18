@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='{% static 'ass.css' %}'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+</head>
+<body>
+
+{#                <form action="#" method="get" class="">#}
+{#                    {% if user.is_authenticated%}#}
+{#                        <li class="nav-item" style="margin-left: 15px">#}
+{#        <a class="" href="/logout" >Logout</a>#}
+{#      </li>#}
+{#      <li class="">#}
+{#        <a class="" href="#">Welcome, {{user.username}}</a>#}
+{#      </li>#}
+{#                         {% else %}#}
+{#                <a href="registration.html" style="margin-left: auto" type="submit">Register </a>#}
+{#                  <a href="login.html" type="submit">Login</a>#}
+{#                    {% endif %}#}
+{#              </button>#}
+{#            </form>#}
+
+
+
+        <div class="sidebar">
+    <p class="PI">PI</p><p class="MO">MO</p>
+    <a href="" class="Home" name="btn">Home</a>
+    <a href="My-Orders.html" class="MyOrders" name="btn">My Orders</a>
+    <a href="My-Offers.html" class="MyOffers" name="btn">My Offers</a>
+    <a href="Create-Order.html" class="CreateOrder" name="btn">Create Order</a>
+    <a class="Support" name="btn">Support</a>
+    <a class="Contact" name="btn">Contact</a>
+    <a class="pimo" name="btn">©2022 PIMO</a>
+</div>
+
+<a class = "HomeTitle">Home</a>
+
+<div class="social">
+    <img class="twitter" src="{% static 'twitter.png' %}">
+    <img class="facebook" src="{% static 'facebook.png' %}">
+    <img class="vk" src="{% static 'vk.png' %}">
+</div>
+
+<div></div>
+
+
+
+      <div class="container">
+            {% for three in counter %}
+                <div>
+                    {% for one in three %}
+                        <div class="mySlides">
+                            <div class="FirstOrder">
+    <p class="name">Title : {{ one.title }}</p>
+    <p class="maxcost">Maximum payment : {{ one.max_cost }}</p>
+    <p class="user">{{ one.created_by }}</p>
+    <p class="deadline">DeadLine : {{ one.deadline }}</p>
+        <button class="makeoffer">Make Offer</button>
+    <p class="details">Details</p>
+    <p class="texts">{{ one.details }}</p>
+
+</div>
+</div>
+                    {% endfor %}
+</div>
+            {% endfor %}
+          <button class="texts" onclick="plusSlides(-3)">&#10094;</button>
+            <button class="texts" onclick="plusSlides(3)">&#10095;</button>
+        </div>
+
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="{% static 'pagination.js' %}"></script>
+<script type="text/javascript" src='{% static 'Main-Page.js' %}'></script>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        let idx = slideIndex - 1;
+        slides[idx].style.display = "block";
+        if (idx + 1 < slides.length) slides[idx + 1].style.display = 'block';
+        if (idx + 2 < slides.length) slides[idx + 2].style.display = 'block';
+    }
+</script>
+
+</html>
